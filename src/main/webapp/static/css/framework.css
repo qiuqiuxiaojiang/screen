@@ -1,0 +1,306 @@
+/**
+*** 椤甸潰鏋舵瀯鏍峰紡
+**/
+
+/** 澶撮儴宸︿晶logo鏍峰紡 **/
+body > .header{
+    position: fixed;
+    width:100%;
+    z-index:10000;
+}
+
+body > .header .logo{
+    float: left;
+    font-size: 20px;
+    line-height: 50px;
+    text-align: left;
+    padding: 0 10px;
+    width: 200px;
+    font-family: 'Kaushan Script', cursive;
+    font-weight: 500;
+    height: 50px;
+    display: block;
+    background: #0094e6;
+    color:#FFFFFF;
+    text-decoration: none;
+}
+body> .header .logo:hover{
+    background: #439acc;
+}
+
+/** 澶撮儴鍙充晶瀵艰埅鏍峰紡 **/
+body > .header .navbar {
+    height: 50px;
+    margin-bottom: 0;
+    margin-left: 200px;
+    background-color: #23b0ff;
+    border-width: 0 0 1px;
+    position: relative;
+    min-height: 50px;
+    border-radius: 0px;
+}
+body > .header .navbar-static-top {
+    border-width: 0;
+    height: auto;
+}
+body > .header .navbar .sidebar-toggle {
+    float: left;
+    padding: 6px 5px;
+    margin-top: 8px;
+    margin-right: 0;
+    margin-bottom: 8px;
+    margin-left: 5px;
+    background-color: transparent;
+    background-image: none;
+    border: 1px solid transparent;
+    -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+    border-radius: 0 !important;
+}
+.navbar-nav {
+    float: left;
+    margin: 0;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+.navbar-right {
+    margin:0px;
+    float: right !important;
+    display: block;
+    height:50px;
+    line-height: 50px;
+}
+.navbar .navbar-right > .btn-group {
+    margin-right: 10px;
+}
+
+.navbar .navbar-right > .navbar-nav >li {
+    display: inline-block;
+    height:48px;
+}
+.navbar .navbar-right > .navbar-nav >li:hover {
+    background: #4199ca;
+    margin:0px;
+    paddin:0px;
+}
+.navbar .navbar-right  .btn {
+    color: #FFFFFF;
+}
+.navbar .navbar-right > .btn-group .btn{
+    border:1px solid #dddddd;
+    background: transparent;
+    color: #FFFFFF;
+    height:100%;
+}
+.navbar .navbar-right > .navbar-nav .btn>.badge{
+    position: relative;
+    top:-10px;
+    font-size: 5px;
+    padding:2px 5px;
+    background: #ff6662;
+}
+
+/**
+*** 鏋舵瀯宸︿晶鑿滃崟鏍峰紡
+**/
+.left-side,.right-side{
+    height:auto;
+    display: block;
+}
+.left-side{
+	padding-bottom: 5%;
+    top:50px;
+    /** position: absolute; **/
+    position:fixed;
+    width: 200px;
+    background: #F6F6F6;
+    border-right: 1px solid #e8e8e8;
+    box-shadow:inset -3px 0px 8px -4px rgba(0, 0, 0, 0.07);
+    z-index: 1000;
+    overflow-y:auto;
+    height:100%;
+}
+.right-side{
+    margin-left: 200px;
+}
+.left-side > .sidebar{
+    border-bottom: 1px solid #fff;
+    margin-bottom: 100px;
+}
+
+/**
+ ** 瀵艰埅閫変腑鏍峰紡
+**/
+.active{
+    background: #FFFFFF;
+    color: #24b3f4 !important;
+}
+.sidebar-menu a span:nth-child(2):before, .sidebar-menu a span:nth-child(2):after{
+    content:""
+}/
+
+/** 宸︿晶鑿滃崟鐢ㄦ埛闈㈡澘鏍峰紡 **/
+.user-panel{
+    padding:10px;
+    border-bottom: 1px solid #dbdbdb;
+}
+.user-panel:before, .user-panel:after {
+    display: table;
+    content: " ";
+}
+.user-panel:after {
+    clear: both;
+}
+.user-panel > .image > img {
+    border: 1px solid #dfdfdf;
+    border-radius: 22.5px;
+    width:45px;
+    height:45px;
+}
+.user-panel > .info,.user-panel > .info > a {
+    color: #555555;
+}
+.user-panel > .info {
+    font-weight: 600;
+    padding: 5px 5px 5px 15px;
+    font-size: 14px;
+    line-height: 1;
+}
+.user-panel > .info > p {
+    font-size: 10px;
+}
+.user-panel > .info > a {
+    text-decoration: none;
+    padding-right: 5px;
+    margin-top: 3px;
+    font-size: 11px;
+    font-weight: normal;
+}
+
+/** 宸︿晶鑿滃崟瀵艰埅鏍峰紡 **/
+/** 鑿滃崟瀵艰埅鏍峰紡 **/
+.sidebar .sidebar-menu,.sidebar .sidebar-menu-child {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.sidebar-menu-child{
+    display: none;
+}
+.sidebar-menu > li {
+    border-top: 1px solid #FFFFFF;
+    border-bottom: 1px solid #dbdbdb;
+}
+.sidebar-menu > li:hover,.sidebar-menu > li:hover > a{
+    background: #fdfdfd;
+    color: #7b7b7b;
+    font-weight: bold;
+}
+.sidebar-menu > li > a {
+    padding: 12px 5px 12px 15px;
+    display: block;
+    color: #555555;
+    text-decoration: none;
+    font-size: 11px;
+    font-weight: normal;
+}
+.sidebar-menu > li > a > .glyphicon,.sidebar-menu-child > li > a > .glyphicon{
+    width: 20px;
+    color: #bdbdbd;
+    font-size: 12px;
+}
+.sidebar-menu-child{
+    border-top: 1px solid #dbdbdb;
+    background: #ececec;
+}
+.sidebar-menu-child > li > a{
+    padding: 12px 5px 12px 30px;
+    display: block;
+    color: #555555;
+    text-decoration: none;
+    font-size: 11px;
+    font-weight: normal;
+}
+.sidebar-menu-child .sidebar-menu-child > li > a{
+	padding: 12px 5px 12px 45px!important;
+}
+.sidebar-menu-child > li {
+    /*border-top: 1px solid #fff;*/
+    /*border-bottom: 1px solid #dbdbdb;*/
+    border:0px;
+}
+.sidebar-menu-child > li:hover,.sidebar-menu-child > li:hover > a{
+    background: #d7d7d7;
+    color:#7b7b7b;
+}
+
+/* 三级菜单样式 */
+.sidebar-menu-3rd-child-a {
+	background: #f0f0f0;
+}
+/**
+.sidebar-menu-child > li:first-child {
+    border-top: 1px solid #FFFFFF;
+    border-bottom: 1px solid #dbdbdb;
+}
+.sidebar-menu-child > li:last-child {
+    border-top:1px solid #FFFFFF;
+    border-bottom: 0px;
+}
+**/
+
+/** 鍙充晶涓昏鍐呭鏍峰紡 **/
+.right-side >.content {
+    padding:0px 15px;
+    background: #f9f9f9;
+}
+.right-side > .content-header {
+    background: #fbfbfb;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+.right-side > .content-header > .breadcrumb{
+    background: #FFFFFF;
+    text-align: right;
+    font-size: 9px;
+    clear: right;
+}
+
+/** 淇敼bootstrap鏍峰紡 **/
+.tooltip>.tooltip-inner{
+    min-width: 80px;
+    width:auto;
+}
+
+/** mediaquery鏌ヨ鏍峰紡 **/
+@media screen and (max-width: 560px){
+    /** 澶撮儴鍖哄煙鏍峰紡 **/
+    body > .header .navbar {
+        margin: 0;
+    }
+    body > .header .logo, body > .header .navbar {
+        width: 100%;
+        float: none;
+        position: relative!important;
+    }
+    .navbar .navbar-right > .navbar-nav {
+        margin-right: 50px;
+    }
+    .navbar-right{
+        margin-right: 0px;
+        height: auto;
+        background:#42a0d2 ;
+    }
+
+    /** 宸︿晶鍖哄煙鏍峰紡 **/
+    .left-side{
+        width:0px;
+        display: none;
+    }
+    /** 鍙充晶鍖哄煙鏍峰紡 **/
+    .right-side{
+         margin-left:0px !important;
+         position:relative;
+         top:100px;
+     }
+}

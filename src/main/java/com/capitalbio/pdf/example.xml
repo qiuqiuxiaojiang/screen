@@ -1,0 +1,171 @@
+<document>
+	<chapter name="阅读指南" id="ydzn">
+		<text indent="0">
+			尊敬的客户：
+		</text>
+		<text >
+			感谢您选用博奥健康科学事业部为您提供的个体遗传检测服务。现代遗传学认为，目前常见多发的疾病如高血压病、冠心病、糖尿病、哮喘病、骨质疏松症、神经性疾病、肿瘤等属于多基因病，这类疾病的发生涉及两个以上基因的结构或表达调控的改变，拥有与这类疾病关联的基因型与疾病的易感风险密切相关。为了便于您在科学发展的今天进行个性化的健康管理，我们将在这份报告中为您提供您的个体遗传检测结果和相关健康风险分析，由我们的健康管理师给出结合您实际情况的预防保健建议供参考。我们确保检测结果的准确可靠。我们采用国内外权威的科学文献成果作为健康风险分析的依据。我们尊重您的个人隐私，并保证您个人信息的安全。
+			在这份报告中，我们将为您提供以下几个部分的内容：
+		</text>
+		<text indent="0" style="bold">综合健康建议</text>
+		<text >总结各类疾病的风险，并提供您需要重点关注的中高风险疾病的健康指导建议。</text>
+		<complex >
+			<text>图中的</text>
+			<text bgcolor="149,186,71" color="255,255,255">绿色柱</text>
+			<text>代表每种风险等级中涉及疾病的个数。例如：</text>
+		</complex>
+		<text indent="0">图例-3 基因和蛋白检测综合分析健康风险等级</text>
+		<complex >
+			<image type="risk">0</image>
+			<text>0级：未检测到风险指标</text>
+		</complex>
+		<complex >
+			<image type="risk">1</image>
+			<text>1级：弱度健康风险</text>
+		</complex>
+		<complex >
+			<image type="risk">2</image>
+			<text>2级：轻度健康风险</text>
+		</complex>
+		<complex >
+			<image type="risk">3</image>
+			<text>3级：中度健康风险</text>
+		</complex>
+		<complex >
+			<image type="risk">4</image>
+			<text>4级：较高健康风险</text>
+		</complex>
+		<complex >
+			<image type="risk">5</image>
+			<text>5级：高度健康风险</text>
+		</complex>
+		<complex >
+			<image type="freq">0</image>
+			<text>稀有基因型（f≤5%）</text>
+		</complex>
+		<complex > 
+			<image type="freq">1</image>
+			<text>罕见基因型（5%≤f≤20%）</text>
+		</complex>
+		<complex >
+			<image type="freq">2</image>
+			<text>次要基因型（20%≤f≤40%）</text>
+		</complex>
+		<complex >
+			<image type="freq">3</image>
+			<text>常见基因型（40%≤f≤60%）</text>
+		</complex>
+		<complex >
+			<image type="freq">4</image>
+			<text>主要基因型（60%≤f≤80%）</text>
+		</complex>
+		<complex >
+			<image type="freq">5</image>
+			<text>多数基因型（f>80%）</text>
+		</complex>
+	</chapter>
+	<catalog id="catalog" name="目录">
+		<ref id="ydzn" name="阅读指南">
+		</ref>
+		<ref id="catalog" name="目录"></ref>
+		<ref id="zhjkjy" name="1. 综合健康建议"></ref>
+		<ref id="zh1" name="1.1 冠心病相关预防建议" depth="1"></ref>
+		<ref id="xnjb" name="2. 心脑疾病"><image type="risk">3</image></ref>
+		<ref id="dmzzyh" name="2.1 动脉粥状硬化" depth="1"><image type="risk">2</image></ref>
+	</catalog> 
+	<chapter name="综合健康建议" id="zhjkjy" no="1">
+		<section name="冠心病相关预防建议" id="zh1">
+			<text>
+				您的遗传位点检测揭示您可能有患冠心病的风险，冠心病在年龄超过40岁的人群中发病率逐渐增高，吸烟、频繁的大量饮酒、繁忙的工作将增加您的患病风险，请您高度关注您的血脂水平、定期测量血压、血糖情况。适度参与步行、体操、唱歌等娱乐性运动，保持劳逸结合。
+				请您在日常生活中，如果出现下列任一情况，要及时就医，请医生决定是否需要接受心电图检查、冠状动脉造影检查等，尽早发现冠心病。
+1)劳累或精神紧张时出现胸骨后或心前区闷痛，或紧缩样疼痛，并向左肩、左上臂放射，持续 3～5分钟，休息后自行缓解。
+2)体力活动时出现胸闷、心悸、气短，休息时自行缓解。
+3)出现与运动有关的头痛、牙痛、腿痛等。
+4)饱餐、寒冷或看惊险影片时出现胸痛、心悸。
+5)夜晚睡眠枕头低时，感到胸闷憋气，需要高枕卧位方感舒适者；熟睡或白天平卧时突然胸痛、心悸、呼吸困难，需立即坐起或站立方能缓解者。
+6)用力排便或性生活时出现心慌、胸闷、气急或胸痛不适。
+7)频繁出现听到噪声便感到心慌、胸闷。
+8)反复出现脉搏不齐，不明原因心跳过速或过缓。
+请您注意家庭预防保健措施：
+1)注意春季防病，早春季节天气忽冷忽热是冠心病多发季节；要注意保暖，避免受寒，根据气温变化，及时增减衣着；户外运动，如遇天气突然变化骤冷，大风时，应注意减少室外活动。
+2)积极防治高血压、高血脂等导致冠心病的危险病因。
+3)戒除烟、高脂饮食等不良嗜好，坚持以素食为主，合理调节营养饮食，避免过度饱餐及饱餐后沐浴，保持大便通畅。
+4)保持心情舒畅，避免过度忧虑、激动、发怒，保持情绪稳定。
+5)避免紧张压力、保持生活和工作清净，避免暴露于过量噪音中。
+6)坚持参加力所能及的体育锻炼，避免竞争激烈的比赛。绝对不搬抬过重的物品。
+7)保持理想体重，适量运动和控制饮食减轻肥胖。
+8)家庭常备药：硝酸甘油片、速效救心丸、消心痛等，而硝酸甘油片、速效救心丸要随身带，尤其外出时更要形影不离。在家中床头、案几等固定而易取的地方摆放，注意药物的保质期。
+9)确认您和亲近您的人知道当您有心慌、胸闷、胸痛等症状时急救的措施。认识医师开给您的各种家庭常备药，也要随时准备好叫救护车的电话号码。
+10)预防心绞痛发作可在赶路、登山、上高楼、做中度劳动、演讲前，寒冷顶风行走时，饱食后，情绪激动后，便秘者在大便前5分钟服用预防发作的药物，例如：舌下含硝酸甘油片或复方硝酸甘油片1片，亦可服硝酸戊四醇酯片(长效硝酸甘油)。请征求医师意见确认适合您预防心绞痛发作的方式。
+			</text>
+		</section>
+	</chapter>
+	<chapter name="心脑疾病" id="xnjb" no="2">
+		<complex>
+			<text>综合风险等级</text>
+			<image type="risk">3</image>
+		</complex>
+		<text>注意，发现了具有中度健康风险的基因位点，请详细了解相关健康知识，严格遵循健康的生活习惯，定期进行针对性身体检查。</text>
+		<text indent="0">本类疾病列表</text>
+		<table>
+			<header bgcolor="177,177,177">
+				<cell>序号</cell><cell>疾病名称</cell><cell>基因位点</cell><cell>风险等级</cell>
+			</header>
+			<row>
+				<cell>1</cell><cell rowspan="3">动脉粥状硬化</cell><cell>9</cell><cell><image type="risk">2</image></cell>
+			</row>
+			<row>
+				<cell>2</cell><cell>24</cell><cell><image type="risk">3</image></cell>
+			</row>
+			<row>
+				<cell>3</cell><cell>24</cell><cell><image type="risk">3</image></cell>
+			</row>
+		</table>
+		<text indent="0">健康建议</text>
+		<table>
+			<header bgcolor="177,177,177">
+				<cell></cell><cell>健康生活</cell><cell>危险生活</cell>
+			</header>
+			<row>
+				<cell>运动</cell><cell>健步疾走、太极拳</cell><cell>冲撞性运动、运动过量</cell>
+			</row>
+		</table>
+		<section name="动脉粥状硬化" id="dmzzyh">
+			<complex>
+				<text>综合风险等级</text>
+				<image type="risk">2</image>
+			</complex>
+			<text>您有轻度动脉粥样硬化易感风险。请了解动脉粥样硬化防治知识，调整饮食习惯，饮食新鲜多样，有脂质代谢失常，血粘滞度增高、动脉粥样硬化所造成的管腔狭窄或动脉瘤病变、要到正规医院接受全程治疗，适度增加健身运动。</text>
+			<text indent="0" style="bold">检测项目列表</text>
+			<table>
+				<header bgcolor="177,177,177">
+					<cell>序号</cell><cell>位点编号</cell><cell>基因名称</cell><cell>基因型</cell><cell>风险等级</cell><cell>人群频率</cell>
+				</header>
+				<row>
+					<cell>1</cell><cell>CB01000061</cell><cell>LTA</cell><cell>AA</cell><cell><image type="risk">2</image></cell><cell><image type="freq">1</image></cell>
+				</row>
+				<row>
+					<cell>2</cell><cell>CB01000061</cell><cell>LTA</cell><cell>AA</cell><cell><image type="risk">2</image></cell><cell><image type="freq">1</image></cell>
+				</row>
+				<row>
+					<cell>3</cell><cell>CB01000061</cell><cell>LTA</cell><cell>AA</cell><cell><image type="risk">2</image></cell><cell><image type="freq">1</image></cell>
+				</row>
+			</table>
+			<text>风险提示</text>
+			<text>遗传</text>
+			<text>脂质代谢紊乱的家族史</text>
+		</section>
+	</chapter>
+	<header>
+		<headeritem align="left" x="30" y="830" fontSize="8">地 址：北京市昌平区生命科学园路18号</headeritem>
+		<headeritem align="left" x="30" y="820" fontSize="8">邮 编：102206</headeritem>
+		<headeritem align="left" x="30" y="810" fontSize="8">电 话：010-80726791</headeritem>
+		<headeritem align="left" x="30" y="800" fontSize="8">Email：service@capitalbiosci.com</headeritem>
+		<headeritem align="left" x="30" y="790" fontSize="8" link="http://health.capitalbio.com">网 址：http://health.capitalbio.com</headeritem>
+		<headeritem align="left" x="30" y="780" fontSize="8">咨询电话：400-650-6950</headeritem>
+		<headeritem align="right" x="500" y="780" fontSize="8"><image width="60" height="60">images/weibo.png</image></headeritem>
+		<headeritem align="left" x="30" y="30" fontSize="8">血栓性疾病个性化用药基因检测报告</headeritem>
+		<headeritem align="center" x="300" y="30" fontSize="8">第@pageNum@页，共@allPageNum@页</headeritem>
+		<headeritem align="right" x="580" y="30" fontSize="8">认识自己   关爱健康</headeritem>
+	</header>
+</document>

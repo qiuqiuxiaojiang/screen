@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"  
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"   
+    xmlns:security="http://www.springframework.org/schema/security"  
+    xsi:schemaLocation="http://www.springframework.org/schema/beans   
+	    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd  
+	    http://www.springframework.org/schema/security   
+	    http://www.springframework.org/schema/security/spring-security-3.0.xsd">
+ 
+	<!-- Spring-Security 的配置 -->
+	<!-- 注意开启use-expressions.表示开启表达式 -->
+	<security:http use-expressions="true" entry-point-ref="loginUrlEntryPoint" access-denied-page="/login/denied.htm">
+		<!-- 表示所有的人都可以访问/login/toLogin.htm -->
+		<security:intercept-url pattern="/login/toLogin.htm" access="permitAll"/>
+		
+		<security:logout
+			invalidate-session="true"
+			logout-success-url="/login/toLogin.htm" 
+			logout-url="/ehr/logout/quit.htm"/>
+			
+		<!-- 认证和授权 --><!-- 重写登陆认证的过滤器，使我们可以拿到任何参数  -->  
+        <security:custom-filter ref="loginFilter" before="FORM_LOGIN_FILTER"  />
+       <!--  <security:custom-filter ref="adminLoginFilter" position="FORM_LOGIN_FILTER"  /> -->
+		<security:custom-filter ref="myFilter" before="FILTER_SECURITY_INTERCEPTOR" /> 
+		
+		<security:custom-filter before="LOGOUT_FILTER" ref="loginFilter"/>
+	</security:http>
+	 
+	<!-- 未登录的切入点 -->
+	<bean id="loginUrlEntryPoint" class="com.capitalbio.common.security.LoginUrlEntryPoint"></bean>
+	
+	<!-- 前台登录 -->
+	<bean id="loginFilter" class="com.capitalbio.common.security.MyAuthenticationFilter">
+        <property name="authenticationManager" ref="authenticationManager"/>
+        <property name="authenticationFailureHandler" ref="failureHandler"/>
+        <property name="authenticationSuccessHandler" ref="successHandler"/>
+        <property name="filterProcessesUrl" value="/j_spring_security_check"/>
+	</bean> 
+    <bean id="failureHandler" class="org.springframework.security.web.authentication.SimpleUrlAuthenticationFailureHandler">
+        <property name="defaultFailureUrl" value="/login/toLogin.htm" />
+    </bean>
+    <bean id="successHandler" class="org.springframework.security.web.authentication.SimpleUrlAuthenticationSuccessHandler">
+         <property name="alwaysUseDefaultTargetUrl" value="true"/>
+         <property name="defaultTargetUrl" value="/login/login.htm"/>
+    </bean>
+	
+	<!-- 注销过滤器，完成前台用户注销时的定向功能 -->
+    <bean id="logoutFilter" class="org.springframework.security.web.authentication.logout.LogoutFilter">
+        <constructor-arg value="/login/toLogin.htm" />
+        <constructor-arg>
+            <list>
+                <bean class="org.springframework.security.web.authentication.logout.SecurityContextLogoutHandler" />
+            </list>
+        </constructor-arg>
+        <property name="filterProcessesUrl" value="/logout/quit.htm" />
+    </bean>
+    
+	
+	<!--一个自定义的filter，必须包含 authenticationManager,accessDecisionManager,securityMetadataSource三个属性，我们的所有控制将在这三个类中实现，解释详见具体配置 -->  
+    <bean id="myFilter" class="com.capitalbio.common.security.MyFilterSecurityInterceptor">  
+        <property name="authenticationManager" ref="authenticationManager" />  
+        <property name="accessDecisionManager" ref="myAccessDecisionManagerBean" />  
+        <property name="securityMetadataSource" ref="securityMetadataSource" />  
+    </bean>  
+    
+	<!-- 验证配置，认证管理器，实现用户认证的入口，主要实现UserDetailsService接口即可 -->
+	<!-- <security:authentication-manager alias="authenticationManager">
+		<security:authentication-provider user-service-ref="customUserDetailsService">
+			<security:password-encoder hash="md5" ref="passwordEncoder">
+				<security:salt-source user-property="salt"/>
+			</security:password-encoder>
+		</security:authentication-provider>
+	</security:authentication-manager> -->
+	
+	<security:authentication-manager alias="authenticationManager">
+		<security:authentication-provider user-service-ref="customUserDetailsService">
+			<security:password-encoder ref="passwordEncoder"/>
+		</security:authentication-provider>
+	</security:authentication-manager>
+ 	
+ 	<!-- 对密码进行MD5编码加密 -->
+ 	<bean class="org.springframework.security.authentication.encoding.Md5PasswordEncoder" id="passwordEncoder"/>
+ 	<!--
+ 		通过customUserDetailsService,Spring会自动的判定用户的访问级别。
+ 		也可以理解成：以后我们和数据库操作就是通过customUserDetailsService来进行关联。
+ 		项目实现的用户查询服务，将用户信息查询出来
+ 	 -->
+ 	<bean id="customUserDetailsService" class="com.capitalbio.common.security.CustomUserDetailsService"/>
+ 	
+    <!--访问决策器，决定某个用户具有的角色，是否有足够的权限去访问某个资源 -->  
+    <bean id="myAccessDecisionManagerBean"  
+        class="com.capitalbio.common.security.MyAccessDecisionManager">  
+    </bean>  
+    <!--资源源数据定义，将所有的资源和权限对应关系建立起来，即定义某一资源可以被哪些角色访问 -->  
+    <bean id="securityMetadataSource"  
+        class="com.capitalbio.common.security.ResourceServiceImpl" init-method="init" />   
+            
+  
+</beans>

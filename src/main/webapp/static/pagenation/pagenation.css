@@ -1,0 +1,107 @@
+.table-assist{
+            margin: 5px 0px;
+    		background: #f7f7f7;
+        }
+        .table-assist,.search-panel,.btn-panel{
+            padding:5px;
+        }
+        .search-panel label{
+            font-weight: normal;
+        }
+        .search-panel input:not(.btn),.search-panel select{
+            border:1px solid #dddddd;
+            border-radius: 2px;
+            padding:0px 5px;
+            width: 180px;
+            height: 30px;
+            margin-right: 10px;
+        }
+
+.pageNumRotate{
+            transform:rotateX(360deg);
+            -moz-transform:rotateX(360deg);
+            transition-duration:5s;
+            -webkit-transition-duration:5s;
+        }
+        .pageBar .input-group-sm>.form-control,.pageBar .input-group-sm>.input-group-addon,.pageBar .input-group-sm>.input-group-btn>.btn{
+            height: 29px;
+        }
+        .pagination{
+            float: left;
+            margin:0px;
+        }
+        .page-show-rows{
+            float: left;
+            width:60px;
+            margin-left: 15px;
+        }
+        .select-show-rows{
+            width:60px;
+            height: 29px;
+            outline: none;
+            border:1px solid #979797;
+        }
+        .page-turn-box{
+            float: left;
+            width:80px;
+            margin-left: 15px;
+        }
+        .input-page-num{
+            outline: none;
+            border-color: #979797;
+        }
+        .page-count-bar{
+            float: left;
+            margin-left: 15px;
+            padding:6px;
+            position: relative;
+            top:0px;
+            font-size: 14px;
+            color: #696969;
+        }
+        .pageCounts{
+            font-weight: bold;
+            color: #337ab7;
+            margin:0px 4px;
+        }
+        tr>th{
+            text-align: center;
+        }
+        tr>th .glyphicon-triangle-top,tr>th .glyphicon-triangle-bottom{
+            color: #cccccc;
+        }
+
+        tr>td:first-child{
+            text-align: center;
+        }
+
+        .sorting{
+            padding-right: 25px !important;
+            position: relative;
+        }
+        .sorting:hover{
+            cursor: pointer;
+        }
+        .sorting-box{
+            display:inline-block;
+            margin-left:30px;
+        }
+        .sorting-top{
+            position: absolute;
+            top:7px;
+            right:5px;
+            clear: both;
+        }
+        .sorting-bottom{
+            position: absolute;
+            top:20px;
+            right:5px;
+        }
+        tr>th.asc .sorting-top,tr>th.asc .sorting-bottom{
+            top:12px;
+            color: #3479b7;
+        }
+        tr>th.desc .sorting-bottom{
+            top:14px;
+            color: #3479b7;
+        }

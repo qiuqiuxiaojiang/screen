@@ -1,0 +1,242 @@
+
+#templet-title{
+    margin:10px auto;
+    padding: 5px;
+    text-align: center;
+}
+.module{
+    background:#FFFFFF;
+    border-top:5px solid #cccccc;
+    margin:10px 0px;
+}
+.module-popup{
+	border:0px;
+}
+
+.module>h4{
+    padding:10px 15px;
+    color:#337AB7;
+    border-bottom:1px solid #cccccc;
+    background:#fdfdfd;
+    border-top-left-radius:3px;
+    border-top-right-radius:3px;
+    font-size:12px;
+    font-weight:bold;
+}
+.module .panel{
+	border:0px;
+}
+.module .panel-heading{
+	color:#337AB7;
+	background:#FFFFFF;
+	border-bottom:1px solid #cccccc;
+	font-size:12px;
+    font-weight:bold;
+    padding:15px 15px 10px 15px;
+}
+.module input,.module select,.module textarea{
+    font-size: 11px;
+}
+
+.module form{
+    padding:10px 0px;
+}
+
+.cell-input-box input,.cell-input-box select,.cell-input-box textarea{
+    border:0px;
+    border-bottom:1px solid #cdcdcd;
+    font-size:12px;
+}
+.cell-input-box input:focus,.cell-input-box select:focus,.cell-input-box textarea:focus{
+    outline: none;
+    border:0px;
+    border-bottom:1px solid #e1e1e1;
+}
+
+
+.cell-column{
+    height:auto;
+    margin-top:10px;
+}
+.cell-label-box{
+    height: 30px;
+    width:100px;
+    display: inline-block;
+    padding: 5px 10px 5px 0px;
+    margin:0px;
+    float: left;
+}
+.cell-input-box{
+    /*height:30px;*/
+    margin-left:100px;
+}
+.cell-input-box-value{
+    padding:5px;
+    margin-left:100px;
+    min-height: 30px;
+    border-bottom:1px solid #cccccc;
+    font-size:12px;
+
+}
+.cell-label{
+    font-size:11px;
+    text-align: right;
+    font-weight: normal;
+    color: #494b69;
+    float: right;
+}
+.cell-input{
+    width:100%;
+    height:30px;
+}
+.cell-textarea{
+    height:100px;
+    width:100%;
+}
+.cell-radio{
+    height: 20px;
+    padding:0px !important;
+    margin:0px !important;
+    margin-top:5px !important;
+}
+.cell-checkbox{
+    height: 20px;
+    padding:0px !important;
+    margin:0px !important;
+    margin-top:5px !important;
+}
+.label-options{
+    font-size:11px;
+    font-weight: normal;
+    color: #494b69;
+    position: relative;
+    top:-6px;
+    padding:0px 20px 0px 5px;
+    height:20px;
+}
+.cell-select{
+    height:30px;
+    width:100%;
+}
+
+.cell-img-input,.cell-attach-input{
+    width:80px;
+    border-radius: 2px;
+    font-size: 11px;
+    /*background: #EC823A;*/
+    background:#ffffff;
+    border:1px solid #b4b4b4 !important;
+    color: #787878;
+}
+
+
+
+.module table>thead>tr>th{
+    color:#666666;
+    font-size:12px;
+}
+
+
+
+.form-btn-group{
+    text-align: right;
+}
+.form-btn-group input{
+    margin:5px;
+    color: #ffffff;
+    font-weight: bold;
+}
+.form-save-btn,.form-edit-btn{
+    background: #00B7EE;
+}
+.form-af-btn{
+    width:30px;
+    height: 30px;
+    margin-left:70px;
+    border:1px solid #aaa9a7;
+    border-radius: 2px;
+    background: #ffffff;
+    outline: none;
+}
+.form-af-btn > .glyphicon{
+    color: #16a97e;
+    font-size: 14px;
+    margin:auto;
+}
+
+.form-am-btn{
+    height: 30px;
+    border:1px solid #c4c4c4;
+    border-radius: 4px;
+    background: #ffffff;
+    color: #16a97e;
+    font-size: 11px;
+}
+.form-am-btn:hover{
+    height: 30px;
+    border:1px solid #16a97e;
+    border-radius: 4px;
+    background: #f3f3f3;
+    color: #16a97e;
+    font-size: 11px;
+}
+
+
+
+
+
+/**
+** popoverµ¯³ö´°ÑùÊ½
+**/
+.popover-line{
+    margin:7px;
+}
+.popover-label{
+    font-size: 11px;
+    font-weight: normal;
+    margin-right:5px;
+}
+.popover-input,.popover-select{
+    width:150px;
+    height: 28px;
+}
+
+.delete-field{
+    position:absolute;
+    right:0px;
+    bottom:0px;
+    color: #ff6f6b;
+}
+
+.btn-save-field{
+    background: #16b085;
+    color: #ffffff;
+}
+
+
+.addField-transform{
+    color: #CC0033 !important;
+    font-size:14px;
+    -webkit-transform:rotate(45deg);
+    -webkit-transition-duration:1s;
+    -moz-transform:rotate(45deg);
+    -moz-transition-duration:1s;
+    -o-transform:rotate(45deg);
+    -o-transition-duration:1s;
+}
+.addField-transform-back{
+    color: #16a97e !important;
+    -webkit-transform:rotate(0deg);
+    -webkit-transition-duration:1s;
+    -moz-transform:rotate(0deg);
+    -moz-transition-duration:1s;
+    -o-transform:rotate(0deg);
+    -o-transition-duration:1s;
+}
+
+.demo{
+    height:auto !important;
+}
+.imgBox>.uploadImg,.imgBox>.uploadImg>.upload_image{
+    height:115px !important;
+}

@@ -1,0 +1,36 @@
+@charset "utf-8";
+/* CSS Document */
+
+.list{
+	position:fixed;
+	right:0px;
+	top:175px;
+	height:auto;
+	width:auto;
+	background-color:#eee;
+	border:1px solid #ddd;
+	font-family: "幼圆";
+	color:#000;
+}
+.list ul{
+	margin-top: 20px;
+}
+.list ul li{
+	width:120px;
+	height:28px;
+	list-style:none;
+}
+.list ul li a:hover{
+	text-decoration:underline;
+	font-weight:bold;
+	color:#dd6f00;
+}
+.list ul li div{
+	width:auto;
+}
+.list ul li div.shoujkhd{
+	width: auto;
+	text-align: left;
+}
+
+

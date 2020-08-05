@@ -1,0 +1,114 @@
+	.main{
+        width: 100%;
+        min-height: 100%;
+        position: absolute;
+        background: #F2F3F7;
+        background-size: 100% 100%;
+    }
+    .tab{
+        width: 86%;
+        margin: 0% 1% 1% 214px;
+        height: 75px;
+        background: #fafafa;
+        border: 1px #DCDCDC solid;
+    }
+    .tab ul{
+        width: 100%;
+        height: 100%;
+        padding: 5px 0 0;
+    }
+    .tab ul li{
+        float: left;
+        height: 60px;
+        line-height: 60px;
+        padding: 0 59px 10px;
+        border-left: 1px #DCDCDC solid;
+        cursor: pointer;
+    }
+    .tab ul li a{
+        color: #6E6E6E;
+    }
+    .tab ul li a:hover{
+       text-decoration: none;
+    }
+    .activeLi a{
+        color: #42A0D3!important;
+    }
+    .activeLi{
+        background: #ffffff!important;
+        color: #42A0D3!important;
+        border-bottom: 3px #42A0D3 solid;
+        padding-bottom: 65px!important;
+    }
+    .chartDiv,.total{
+        width: 86%;
+        margin: 1% 1% 1% 214px;
+        background: #ffffff;
+        padding: 50px 10%;
+        border: 1px #E5E5E5 solid;
+        border-radius: 8px;
+    }
+    .total{
+        padding: 30px 5%!important;
+        color: #646464!important;
+    }
+    .chartDiv h1{
+        font-size: 18px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .chartDiv table tr td{
+        text-align: center;
+        border-top: none;
+        height: 30px;
+        line-height: 30px;
+        border-bottom: 1px #DCDCDC solid;
+    }
+    .chartDiv table tr:first-child td{
+        background: #F8F8F8;
+        border-bottom: none;
+    }
+    #jd_age{
+        width: 70%;
+        margin: 10px auto;
+        height: 350px;
+    }
+     .g2-label-item {
+         font-size: 12px;
+         text-align: center;
+         line-height: 0.4;
+     }
+
+    .g2-label-item-value {
+        color: #595959
+    }
+
+    .g2-label-item-percent {
+        color: #8c8c8c
+    }
+    
+    .page {
+	    width: 85%;
+	    text-align: right;
+	    padding-right: 5px;
+	    position: relative;
+	    margin: 0 0 35px;
+	    float: right;
+	    margin-right: 3%;
+	}
+	.page p{
+	    position: absolute;
+	    top: 8px;
+	    font-size: 16px;
+	    color: #AAAAAA;
+	    left: 5px;
+	    font-weight: normal!important;
+	}
+	#page1 ul li a,#page2 ul li a,#page3 ul li a, #jump {
+	    margin: 0 9px;
+	    border-radius: 4px;
+	    padding: 7px 12px !important;
+	}
+	#jump {
+	    margin-right: 0 !important;
+	}

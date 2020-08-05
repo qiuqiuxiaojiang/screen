@@ -1,0 +1,121 @@
+.upimgcontent{
+        width: 100%;
+    }
+    .img-wrap{
+        width: 100px;
+        height: 145px;
+        float: left;
+        margin-right: 10px;
+        margin-top: 10px;
+        position: relative;
+    }
+    .pic{
+        width: 100px;
+        height: 100px;
+        overflow: hidden;
+    }
+    .tip{
+        /* position: absolute;
+        left: 0;
+        bottom: 0; */
+        width: 100%;
+        height: 30px;
+    }
+    .close1{
+        /*position: absolute;
+        right: -6px;
+        top: -10px;*/
+        color: red!important;
+        opacity: 1;
+         float: right;
+    }
+    /* .tip span:first-child{
+        margin-right: 30px;
+    } */
+    .tip span{
+        font-size: 21px;
+        font-weight: 700;
+        line-height: 1;
+        color: #000;
+        text-shadow: 0 1px 0 #fff;
+        filter: alpha(opacity=20);
+        /*opacity: .2;*/
+        vertical-align: middle;
+        cursor: pointer;
+    }
+    .img-wrap img{
+        width: 100%;
+    }
+    .fileinput-wrap input,.newfileinput-wrap input{
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 0;
+        opacity: 0;
+        -ms-filter: 'alpha(opacity=0)';
+        direction: ltr;
+        cursor: pointer;
+    }
+    #dd,#ddt{
+        width: 100%;
+       /*  height: 100px; */
+        position: relative;
+    }
+    .shade{
+        position: absolute;
+        left: 0;
+        width: 100%;
+        min-height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        display: none;
+        z-index: 999999;
+        overflow: auto;
+    }
+    .shade img{
+        margin: 2% auto;
+    }
+     .shade1{
+     position: absolute;
+     left: 0;
+     top: 0;
+     bottom: 0;
+     right: 0;
+     width: 100%;
+     height: 100%;
+     background: rgba(0, 0, 0, 0.5);
+     display: none;
+ 	}
+
+        .shade1 p{
+            width: 50%;
+            height: 10%;
+            margin: 20% 15% 0;
+            padding-left: 35%;
+            text-align: center;
+        }
+        .shade1 p img{
+            display: inline-block;
+            line-height: 60px;
+            float: left;
+        }
+        .shade1 p span{
+            display: inline-block;
+            text-align: left;
+            padding-left: 2%;
+            color: #fff;
+            font-size: 1.6em;
+            float: left;
+        }
+        .meal tr{
+	        display:block;
+	        margin:2px 0;
+        }
+        .meal{
+	       font-weight: 400;
+    		font-size: 14px;
+    		font-family: sans-serif;
+        }
+        
+        .meal input{
+         width: 81px;
+        }

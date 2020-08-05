@@ -1,0 +1,47 @@
+/** 
+	****panel自定义组件样式 
+**/
+
+.panel-primary>.panel-heading-liner {
+     color: #515151;
+     background-color: #fcfdfd;
+     border:0px;
+    border-color:#0487e9;
+    border-top-width: 3px;
+    border-top-style: solid;
+ }
+.panel-success>.panel-heading-liner {
+    color: #515151;
+    background-color: #fcfdfd;
+    border:0px;
+    border-color:#09AD7B;
+    border-top-width: 3px;
+    border-top-style: solid;
+}
+.panel-warning>.panel-heading-liner {
+    color: #515151;
+    background-color: #fcfdfd;
+    border:0px;
+    border-color:#e9bd43;
+    border-top-width: 3px;
+    border-top-style: solid;
+}
+.panel-danger>.panel-heading-liner {
+    color: #515151;
+    background-color: #fcfdfd;
+    border:0px;
+    border-color:#e96d5c;
+    border-top-width: 3px;
+    border-top-style: solid;
+}
+.panel-default>.panel-heading-liner {
+    color: #515151;
+    background-color: #fcfdfd;
+    border:0px;
+    border-color:#515151;
+    border-top-width: 3px;
+    border-top-style: solid;
+}
+.panel-noborder {
+    border: 0px;
+}
